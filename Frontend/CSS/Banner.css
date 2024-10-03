@@ -1,0 +1,97 @@
+header {
+    /* 寬度 */
+    width: 100%;  
+    /* 高度 */
+    height: 100%; 
+    background-image: url(../images/bg/bg3.jpg); /* 背景圖 */
+    background-repeat: no-repeat; /* 不重複排列 */
+    background-position: center; /* 對齊方式:置中 */
+    background-size: cover;  /*圖片大小:auto(自動，以圖片原有尺寸為主) contain(符合範圍尺寸，可能會留白) cover(不留白覆蓋整個範圍)*/
+    background-attachment: fixed;  /* 背景圖片是否隨著內容捲動 */
+    display: flex;  /* 彈性布局 排版文字位置 */
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
+
+/*ID選擇器 在CSS代號為#*/
+#NavContent {
+    /* 寬度 高度 背景顏色 文字顏色 */
+    width: 100%;
+    height: 50px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    /* 水平對齊 置中 */
+    justify-content: center;
+    /* 垂直對齊 置中 */
+    align-items: center;
+    /* 定位方式:固定定位 靠上 */
+    position: fixed;
+    top: 0;
+    /* 背景顏色 */
+    background-color: rgba(50, 175, 50, 0.9);
+}
+
+/*
+1.若HTML框架中有相同的標籤，可利用ID選擇器來區別
+2.子選擇器來撰寫規則:父元素 > 子元素(最多3層):一階一階呼叫
+3.vertical-align;需要在同一標籤之內，才能啟動對齊功能 EX:<1><img><p></p></h1>
+4.浮動元素對齊法 float; 需再對齊的元素之內設定 歸類在"文繞圖"
+*/
+
+#NavContent > h1 {
+    /* 寬度 字體大小 文字對齊:水平置中 */
+    width: 30%;
+    font-size: 1.3rem;
+    text-align: center;
+}
+/*子元素選擇器*/
+#NavContent > nav {
+    /* 寬度 高度 對齊:靠左*/
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+/*後代選擇器*/
+#NavContent ul {
+   width: 70%;
+    /* 顯示方式:彈性布局 */
+    display: flex;
+    justify-content: space-around;
+    /*  隱藏項目符號 */ 
+    list-style-type: none;
+   }
+
+#NavContent li a {
+    /* 超連結 文字顏色:白 字體大小 文字取消底線樣式(裝飾) */
+    color: white;
+    font-size: 1.3rem;
+    /*文字取消底線樣式(裝飾)*/
+    text-decoration: none;    
+}
+
+/*廣告區 靜態廣告*/
+#Banner ,#Abouts {
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+#Banner > h2 {
+    font-size: 4rem;
+}
+#Banner span {
+    margin-left: 40px;
+}
+#Banner > ul {
+    font-size: 2rem;
+    color: rgb(18, 131, 63);
+}
+#Banner span {
+    margin-left: 40px;
+}
+#Banner > p {
+    margin: 5px auto 20px auto;
+}
+#Carousel {
+    display: none;
+}

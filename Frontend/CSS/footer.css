@@ -1,0 +1,45 @@
+footer {
+    width: 100%;
+    height: 200px;
+    background-image: url(../images/bg/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    /* 彈性布局 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer > section {
+    width: 100%;
+}
+#SubNav {
+    width: 100%;
+}   
+#SubNav > #SubNavUl {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}  
+#SubNav > #SubNavUl li {
+    width: calc(100%/5);
+}
+#SubNav li a {
+    color: wheat;
+    text-decoration: none;
+}
+#SubNav #SubNavSkill {
+    border-left: solid 2px white;
+}
+#SubNav #SubNavWorks {
+    border-left: solid 2px white;
+    border-right: solid 2px white;
+}
+#SubNav #SubVideo {
+    border-right: solid 2px white;
+}

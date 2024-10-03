@@ -1,0 +1,40 @@
+/*樣式表 初始化 通用選擇器(*) */
+
+* {
+    /* 共用 外邊距: 上下為0 左右自動(因為要啟動彈性布局FLEX)，所以初始化數據設定 上下左右為0*/
+    margin: 0 ;
+    /*內間距 上下左右為0*/
+    padding: 0 ;
+}
+
+body,html {
+    /* 基於:父元素為百分比，子元素只能作用一層*/
+    width: 100%;
+    height: 100%;
+    /*設定字型:電腦本身就有的英文字型(Arial)，直接輸入自行即可。如果要用匯入的方式， 需要加上單引號*/
+    font-family: 'Roboto', '微軟正黑體';
+}
+
+.line{
+    /* 寛度:像素(單位) 高度:像素(單位) 框線(下):樣式 寛度 顏色 */
+    width: 80px;
+    height: 5px;
+    margin: 0 auto;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(117, 25, 40);
+}
+.lineW{
+    /* 寛度:像素(單位) 高度:像素(單位) 框線(下):樣式 寛度 顏色 */
+    width: 80px;
+    height: 5px;
+    margin: 0 auto;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(255, 255, 255);
+}
+img {
+    /* 等比縮放圖片~:最大寬度 高度自動*/
+    max-width: 100%;
+    height: auto;
+}
